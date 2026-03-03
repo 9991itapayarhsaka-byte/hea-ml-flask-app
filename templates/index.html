@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HEA Hardness Predictor</title>
+</head>
+<body>
+    <h2>High Entropy Alloy Hardness Prediction</h2>
+
+    <form action="/predict" method="post">
+        Fe: <input type="text" name="Fe"><br><br>
+        Ni: <input type="text" name="Ni"><br><br>
+        Cr: <input type="text" name="Cr"><br><br>
+        Co: <input type="text" name="Co"><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+
+    <h3>{{ prediction_text }}</h3>
+</body>
+</html>
